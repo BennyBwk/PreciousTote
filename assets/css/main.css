@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    min-width: 320px;
+    min-width: 320px !important;
 }
 
 #homeDiv {
@@ -8,7 +8,7 @@ body, html {
     height: 100%;
 }
 
-@media screen (orientation:landscape) {
+@media (orientation: landscape) {
 	.home {
 		background-image: url("../images/landing-page.jpg");
 		background-position: center;
@@ -17,7 +17,7 @@ body, html {
 	}
 }
 
-@media screen  (orientation:portrait) {
+@media (orientation: portrait) {
 	.home {
 		background-image: url("../images/landing-page.jpg");
 		background-position: center;
