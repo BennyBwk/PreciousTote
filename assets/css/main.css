@@ -15,6 +15,15 @@ body, html {
     background-repeat: no-repeat;
 }
 
+@media (min-width: 400) and (orientation: potrait) { 
+	.home {
+		background-image: url("../images/landing-page.jpg");
+		background-position: center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+	}
+}
+
 #bodyContent {
     position: absolute;
     top: 60px;
