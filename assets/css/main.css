@@ -15,7 +15,7 @@ body, html {
     background-repeat: no-repeat;
 }
 
-@media (min-width: 400) and (orientation: potrait) { 
+@media (min-width: 400) and (orientation: portrait) { 
 	.home {
 		background-image: url("../images/landing-page.jpg");
 		background-position: center;
