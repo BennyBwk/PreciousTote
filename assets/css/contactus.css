@@ -1,0 +1,163 @@
+#bodyContent {
+    top: 30vh;
+    margin: 0 3%;
+}
+
+#contactLeft {
+    float: left;
+    width: 50%;
+}
+
+#contactRight {
+    float: right;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 5%;
+    padding-top: 45px;
+}
+
+#contactRight img {
+    height: 50px;
+    width: 50px;
+}
+
+.igHandle {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 300;
+    text-decoration: none !important;
+    color: black;
+    margin: 14px 0px 14px 10px;
+}
+
+.noDeco, .noDeco:hover, .noDeco:focus, .noDeco:visited, .noDeco:active {
+    color: black !Important;
+    text-decoration: none !important;
+}
+
+.vertical { 
+    width: 6%;
+    border-left: 2px solid black; 
+    height: 100%; 
+    position: absolute; 
+    right: 37%;
+} 
+
+.contactCategory {
+    color: rgba(176, 176, 176);
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #bodyContent {
+        top: 60px;
+        margin: 0 5%;
+    }
+    
+    #contactLeft {
+        float: none;
+        width: 90%;
+        left: auto;
+        right: auto;
+    }
+    
+    #contactRight {
+        float: none;
+        position: relative;
+        width: 90%;
+        left: auto;
+        right: auto;
+        margin-bottom: 20px;
+    }
+    
+    .vertical {
+        display: none;
+    }
+    
+    .contactCategory {
+        margin-top: 0px !important;
+    }
+    
+    .brk {
+        font-size: 0px;
+        line-height: 0px;
+    }
+    
+    h4, h5 {
+        margin: 5px 0 !important;
+    }
+}
+
+h2 {
+    margin-top: 25px !important;
+    margin-bottom: 30px !important;
+    font-family: LuloCleanStd-OneBold, sans-serif !important;
+    font-size: 32px !important;
+    font-weight: 400 !important;
+}
+
+p {
+    font-family: AvenirNextLTPro-Regular !important;
+    font-size: 16px !important;
+    font-weight: 100;
+    margin-bottom: 30px !important;
+}
+
+.msgInput {
+    font-family: AvenirNextLTPro-Regular !important;
+    background-color: #d5d4d4;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    height: 32px;
+    margin-bottom: 5px !important; 
+}
+
+#messageTB {
+    font-family: AvenirNextLTPro-Regular !important;
+    background-color: #d5d4d4;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    resize: none;
+}
+
+select {
+    font-family: AvenirNextLTPro-Regular !important;
+    background-color: #d5d4d4;
+    border: none;
+    width: 80%;
+    height: 32px; 
+    padding: 0 5px;
+    margin-bottom: 5px !important;
+}
+
+.sendEmailBtn {
+    margin-top: 30px;
+    font-family: AvenirNextLTPro-Regular !important;
+    font-size: 16px !important;
+    font-weight: 100;
+	background-color:#000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important;
+	padding:11px 20px;
+	text-decoration:none !important;
+}
+
+.sendEmailBtn a:hover {
+    text-decoration: none;
+    color: #c96035;
+}
+
+.sendEmailBtn:focus, .sendEmailBtn:visited, .sendEmailBtn:active {
+    text-decoration: none;
+    outline: 0;
+}
+
+.antispam {
+    display: none !important;
+}

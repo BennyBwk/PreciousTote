@@ -1,0 +1,19 @@
+@font-face {
+    font-family: LuloCleanStd-OneBold;
+    font-weight: bold;
+    src: url("../fonts/Lulo-Clean-Std-One-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: AvenirNextLTPro-Regular;
+    src: url("../fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Avenir-Next-Italic;
+    src: url("../fonts/Avenir-Next-Italic.ttf") format("truetype");
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');

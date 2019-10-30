@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Precious Tote</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Precious Tote" >
+        <link rel="icon" type="image/png" href="assets/images/logo/KA.jpg" />
+        <meta name="author" content="ACxAD">
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- if IE explorer -->
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+        <!-- JQuery Import -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Assets Import -->
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/email.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/contactus.css">
+        <!-- Bootstrap Import -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Fonts -->
+        <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+    </head>
+    
+    <body>
+        
+        <img id="navLogo" src="assets/images/logo/KA.png" style="display: none; position: fixed; top: 100px; left:50%; margin-left: -40px;";>
+        
+        <div id="homeDiv" class="">
+            <div id="navBarDiv">
+                <button id="hamburgerMenu" class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-div" id="navbar-div">
+                    <ul class="nav navbar-nav mu-menu navbar-right">
+                        <li class="firstList"><a href="home.html">HOME</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="newdesigns.html">NEW DESIGNS</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li class="current"><a>CONTACT US</a></li>
+                    </ul>
+                </div>
+                
+                <div id="bodyContent">
+                    <div id="contactLeft">
+                        <svg viewBox="0 20 200 160" role="img" style="width: 60px; height: 60px;">
+                            <g>
+                                <path d="M78.2 19.8L85.7 33c.8 1.4 1.7 2.9 2.7 4.5-3.9 2.3-7.7 4.7-11.5 6.9-12.7 7.3-24.2 16.2-33.4 27.8-8.9 11.2-13 24.1-14.3 38.5 4.4 0 8.6-.4 12.8.1 6.8.7 13.9 1.1 20.3 3.3 13.1 4.4 19.5 14.3 20.7 27.9.6 7.4-.5 14.4-4.2 20.9-7.8 13.6-20.5 19.7-37.3 17.5-21.8-2.6-33.5-13.5-38.7-36.3-1.2-5.3-1.9-10.7-2.8-16v-15.4c.2-.6.5-1.2.6-1.9 1-10 4-19.3 8.8-28.1 11.1-20.4 27-36.3 46.3-48.9 7.2-4.7 14.5-9.4 21.8-14.1.2.1.4.1.7.1z"></path>
+                                <path d="M189.4 19.8c3.5 5.8 6.9 11.6 10.6 17.8-1.7 1-3.4 2.1-5.1 3-13.4 7.8-26.3 16.1-36.8 27.9-10.7 12-15.9 26-17.4 42.3 1.4 0 2.8-.1 4.2 0 8.3.6 16.8.2 24.8 2.1 18.9 4.4 26.1 18.9 24.8 36.6-1.3 16.9-15.3 30.5-31.9 31.3-12.2.6-23.9-1.1-33.5-9.5-8.7-7.6-12.6-17.9-15.1-28.8-7.2-32.2 2.1-59.7 23.9-83.6 11-12 23.8-21.8 37.6-30.3 4.5-2.8 8.8-5.8 13.3-8.8h.6z"></path>
+                            </g>
+                        </svg>
+                        <h2>HOW CAN WE HELP YOU?</h2>
+                        <form method="post" id="contactForm" name="contact_form" action="contact-form-handler.php">
+                            <input class="msgInput" type="text" id="nameTB" required aria-invalid="false" name="nameTB" value placeholder="Name*" data-aid="nameField"><br/>
+                            <input class="msgInput" type="text" id="emailTB" required aria-invalid="false" name="emailTB" value placeholder="Email*" data-aid="emailField"><br/>
+                            <select required onchange="document.getElementById('enquiryType').value=this.options[this.selectedIndex].text">
+                                <option value="" selected disabled hidden>Select a subject</option>
+                                <option value="1">General Enquiry</option>
+                                <option value="2">Product Information</option>
+                                <option value="3">Business Enquiry</option>
+                                <option value="4">Others</option>
+                            </select>
+                            <input class="msgInput" type="text" style="display: none;" id="enquiryType" name="enquiryType" value="" />
+                            <input type="text" class="antispam" name="email" value=""/>
+                            <br/>
+                            <textarea rows="4" id="messageTB" required aria-invalid="false" name="messageTB" placeholder="Message"></textarea>
+                            <br/>
+                            <input class="sendEmailBtn" type="submit" name="submit" value="Send">
+                        </form>
+                    </div>
+                    
+                    <div class="vertical"></div>
+                    
+                    <div id="contactRight">
+                        <h4 class="contactCategory">Email</h4>
+                        <h4>General Enquiries/ Collaboration Opportunities</h4>
+                        <a class="noDeco" href="mailto:enquiry@thekaartistry.com"><h5>enquiry@thekaartistry.com</h5></a>
+                        <br class="brk">
+                        <h4>Sales Enquiries</h4>
+                        <a class="noDeco" href="mailto:order@thekaartistry.com"><h5>order@thekaartistry.com</h5></a>
+                        <br class="brk"><br class="brk">
+                        <h4 class="contactCategory">Follow Us</h4>
+                        <a class="noDeco" href="https://www.instagram.com/thekaartistry/"><img src="assets/images/logo/ig.png"></a>
+                        <a class="igHandle" href="https://www.instagram.com/thekaartistry/">@thekaartistry</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <footer id="footer">
+            <p>&copy; 2019 <b>The 卡 Artistry</b>. All Rights Reserved.</p>
+        </footer>
+        
+    </body>
+</html>
