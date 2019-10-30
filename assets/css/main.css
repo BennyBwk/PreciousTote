@@ -284,15 +284,11 @@ footer p {
     }
     .nav a:hover:before,
     .nav .current a:before {
-        opacity: 1;
+        opacity: 0.5;
         width: 100%;
     }
     .nav a:hover:after,
     .nav .current a:after {
         max-width: 100%;
     }
-}
-
-.current a {
-	color: rgba(255, 255, 255, 0.8);
 }
